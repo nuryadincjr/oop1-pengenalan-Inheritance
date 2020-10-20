@@ -1,0 +1,3 @@
+# Pengenalan Inheritance
+
+Studi kasus
