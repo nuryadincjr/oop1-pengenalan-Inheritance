@@ -3,11 +3,10 @@
  *
  * @author abu
  */
-public class Game extends Software{
+class Game extends Software{
     //deklarasi variabel
-    private String jenis = "unkown";
+    private String jenis = "unknown";
     private String tipe = "unknown";
-    String kode, nama, lisensi;
     
     //konstruktor
     public Game(String kode, String nama, String lisensi){

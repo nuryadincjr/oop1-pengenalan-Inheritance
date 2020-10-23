@@ -3,7 +3,7 @@
  *
  * @author abu
  */
-public class Software {
+class Software {
     //deklarasi variabel
     private String kode, nama, lisensi;
     

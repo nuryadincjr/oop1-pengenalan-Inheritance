@@ -3,9 +3,10 @@ import java.io.*;
  *
  * @author abu
  */
-public class Main {
+class Main {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
         //instance of class
         Game gameA = new Game("", "", "");
         Game gameB = new Game("", "", "", "", "");
@@ -29,21 +30,23 @@ public class Main {
             //output + proses
             switch(pilihan){
                 case 1:
+                    String kode, nama, lisensi;
                     System.out.println("=========================");
                     System.out.println("\tINPUT GAME A");
                     System.out.println("=========================");
                     System.out.print("Masukan Kode\t: ");
-                    String kode = br.readLine();
+                    kode = br.readLine();
                     System.out.print("Masukan Nama\t: ");
-                    String nama = br.readLine();
+                    nama = br.readLine();
                     System.out.print("Masukan Lisensi\t: ");
-                    String lisensi = br.readLine();
+                    lisensi = br.readLine();
                     
                     gameA = new Game(kode, nama, lisensi);
                     System.out.println("");
                     System.out.println("*** Data Game A Berhasil disimpan ***");
                     break;
                 case 2:
+                    String jenis, tipe;
                     System.out.println("=========================");
                     System.out.println("\tINPUT GAME B");
                     System.out.println("=========================");
@@ -54,9 +57,9 @@ public class Main {
                     System.out.print("Masukan Lisensi\t: ");
                     lisensi = br.readLine();
                     System.out.print("Masukan Jenis\t: ");
-                    String jenis = br.readLine();
+                    jenis = br.readLine();
                     System.out.print("Masukan Tipe\t: ");
-                    String tipe = br.readLine();
+                    tipe = br.readLine();
                     
                     gameB = new Game(kode, nama, lisensi,jenis, tipe);
                     System.out.println("");
@@ -78,10 +81,11 @@ public class Main {
                     System.out.println("Kode\t: "+gameB.getKode());
                     System.out.println("Nama\t: "+gameB.getNama());
                     System.out.println("Lisensi\t: "+gameB.getLisensi());
-                    System.out.println("Jenis\t: "+gameB.getLisensi());
+                    System.out.println("Jenis\t: "+gameB.getJenis());
                     System.out.println("Tipe\t: "+gameB.getTipe());
                     break;
                 default:
+                    System.out.println("Perogram Keluar.");
                     System.exit(0);
             }
         }
